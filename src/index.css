@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-box {
+    @apply w-[80%] p-3 mt-2 bg-gray-100 border border-gray-50 focus:bg-transparent placeholder:text-black rounded-md;
+  }
+
+  .password-icon {
+    @apply left-[auto] right-14 absolute top-1/2 -translate-y-1/2 cursor-pointer mt-1;
+  }
+
+  .button {
+    @apply px-4 py-2 bg-blue-600 text-white font-bold rounded-full shadow-lg mt-4 mb-4 transition ease-in-out transform hover:scale-110 hover:bg-blue-700;
+  }
+
+  .link-text {
+    @apply mt-8 text-gray-800 text-base text-center underline hover:text-lg transition ease-in-out delay-300;
+  }
+
+  .link {
+    @apply text-gray-800 hover:text-black hover:bg-slate-200 p-3 px-4 block opacity-75 border;
+  }
+}
